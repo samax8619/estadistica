@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro de entrevistas - Encuesta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" style="display:none"></div>
+
+  <header>
+    <div class="logo-universidad-container">
+      <img src="img/logo-universidad-de-santander.webp" alt="Logo Universidad" class="logo-universidad" />
+    </div>
+  </header>
+
+  <main>
+    <h2>Registro de entrevistas</h2>
+
+    <div class="card">
+      <label for="numeroPersonas">Cuantas personas vas a registrar?</label>
+      <input type="number" id="numeroPersonas" min="1" value="5" />
+      <button id="btnIniciar">Iniciar registro</button>
+    </div>
+
+    <div id="formCard" class="card" style="display:none;">
+      <p id="progreso">Entrevistado 0 / 0</p>
+
+      <div id="preguntaContainer">
+        <!-- Aqui se carga dinamicamente la pregunta actual -->
+      </div>
+
+      <div class="control-buttons">
+        <button id="btnAnterior" disabled>Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
+        <button id="btnGuardarPersona">Guardar persona</button>
+      </div>
+
+      <p id="mensajeGuardado" class="mensaje-verde" style="display:none;"></p>
+      <p id="mensajeError" class="mensaje-rojo" style="display:none;"></p>
+
+      <div style="margin-top:12px;">
+        <button id="btnFinalizar">Finalizar registro y ver resultados</button>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;">
+      <a href="index.html"><button>Volver al menu</button></a>
+    </div>
+  </main>
+
+  <footer>
+    Universidad de Santander - Ingenierias de sistemas · Sistemas UDES © 2025
+  </footer>
+
+  <script src="script_encuesta.js"></script>
+</body>
+</html>

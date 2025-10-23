@@ -1,0 +1,72 @@
+/* style.css - diseño UDES simplificado (evitar tildes en textos de codigo) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("https://udes.edu.co/images/micrositios/museo/galeria/_0013__MG_7650.jpg") no-repeat center center / cover;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+header { padding: 16px; text-align: center; }
+.logo-universidad { height: 90px; }
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 16px;
+  text-align: center;
+}
+
+h2 { 
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #0352A6;
+}
+
+.card {
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+label { display:block; text-align:left; margin-bottom:6px; font-weight:bold; }
+input[type="number"], input[type="text"], select, textarea {
+  padding:8px; width:100%; box-sizing:border-box; margin-bottom:8px; font-size:15px;
+}
+
+button {
+  background-color: #0352A6;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.control-buttons { margin-top: 8px; }
+
+.opcion {
+  display:block;
+  text-align:left;
+  margin:6px 0;
+}
+
+.mensaje-rojo { color: #cc0000; font-weight:bold; }
+.mensaje-verde { color: #0b6623; font-weight:bold; }
+
+footer {
+  margin-top: 24px;
+  text-align:center;
+  padding: 10px;
+  background-color: #0352A6;
+  color: #e7dcdc;
+}
